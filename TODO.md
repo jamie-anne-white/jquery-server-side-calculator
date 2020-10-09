@@ -28,7 +28,7 @@ Step-By-Step Checklist
 
 [x] Click event
     - [x] call function 
-    - [] console.log
+    - [x] console.log
 
 [] AJAX
     - [] send inputs of the object 
