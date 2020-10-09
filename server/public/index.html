@@ -10,10 +10,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Server-side Calculator</h1>
+    <h1>Server-Side Calculator</h1>
 </header>
 <main>
-    <h2>Enter Inputs &amp; Click Calculate</h2>
+    <h2>Enter X and Y &amp; Click to Calculate</h2>
+
+    <form>
+        <input type="number" id="numberOneIn" />
+        <select id="operatorIn">            
+            <option value="+" selected="selected">&plus;</option>
+            <option value="-">&minus;</option>
+            <option value="x">x</option>
+            <option value="/">&divide;</option>
+        </select>
+        <input type="number" id="numberTwoIn" />
+
+        <button id="calculate">Click to Calculate</button>
+    </form>
     
 </body>
 </html>

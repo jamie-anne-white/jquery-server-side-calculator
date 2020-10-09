@@ -23,8 +23,8 @@ Step-By-Step Checklist
     - [x] add require for express and for body-parser
 
 [] HTML base
-    - [] 2 inputs 
-    - [] operator and input 
+    - [x] 2 inputs 
+    - [x] operator and input 
 
 [] Click event
     - [] call function 
