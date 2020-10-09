@@ -13,14 +13,14 @@ Step-By-Step Checklist
             - [x] index.html
 
  [] Link base files 
-    -[] client.js, style.css, jquery.js
+    -[x] client.js, style.css, jquery.js
  [] Install!
-    - [] npm init --yes
-    - [] npm install express
-    - [] npm install 
-    - [] npm install body-parser
-    - [] change script in JSON to "start": "node server/server.js"
-    - [] add require for express and for body-parser
+    - [x] npm init --yes
+    - [x] npm install express
+    - [x] npm install 
+    - [x] npm install body-parser
+    - [x] change script in JSON to "start": "node server/server.js",
+    - [x] add require for express and for body-parser
 
 [] HTML base
     - [] 2 inputs 
