@@ -33,10 +33,37 @@ function calculate(){
     .then( function(response) {
         console.log('POST response: ', response);
         // clear them inputs out!
-        clearInputs()
+        clearInputs();
+        getHistory();
+
         
     });
 
+}
+
+function getHistory() {
+    $.ajax({
+        url: '/history',
+        method: 'GET',
+    })
+    .then( function(response) {
+        console.log('GET response: ', response);
+
+        $('#answer').empty();
+        if(response.length) {
+            $('#answer').text(response[0].result); 
+        }        
+
+        $('#historyList').empty();
+
+        for(let calculation of response) {
+            $('#historyList').append(
+                `<li>
+                    ${calculation.numberOne} ${calculation.operator} ${calculation.numberTwo} = ${calculation.result}
+                </li>`
+            )
+        }
+    });
 }
 
 function clearInputs() {
