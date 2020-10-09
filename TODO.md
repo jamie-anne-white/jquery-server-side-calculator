@@ -26,8 +26,8 @@ Step-By-Step Checklist
     - [x] 2 inputs 
     - [x] operator and input 
 
-[] Click event
-    - [] call function 
+[x] Click event
+    - [x] call function 
     - [] console.log
 
 [] AJAX
