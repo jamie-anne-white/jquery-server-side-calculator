@@ -43,5 +43,8 @@ function clearInputs() {
     // numbers
     $('#numberOneIn').val('');
     $('#numberTwoIn').val('');
+
+        // focus on first input field
+        $('#numberOneIn').focus();
     
 }

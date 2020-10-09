@@ -22,7 +22,7 @@ Step-By-Step Checklist
     - [x] change script in JSON to "start": "node server/server.js",
     - [x] add require for express and for body-parser
 
-[] HTML base
+[x] HTML base
     - [x] 2 inputs 
     - [x] operator and input 
 
@@ -30,14 +30,14 @@ Step-By-Step Checklist
     - [x] call function 
     - [x] console.log
 
-[] AJAX
-    - [] send inputs of the object 
-        - [] POST
+[x] AJAX
+    - [x] send inputs of the object 
+        - [x] POST
 
-[] Server
+[x Server
     - [] Routes functioning? 
         - [] Get the object with body-parser
-        - [] Get calculations based on operator
+        - [x] Get calculations based on operator
         - [] Store the calculation and result (?)
         - [] Ok or not? Give a response
 
