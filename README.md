@@ -28,4 +28,13 @@ Run npm run server in your terminal
 Run npm run client in your terminal
 The npm run client command will open up a new browser tab for you!
 
+## Usage
+How does someone use this application? Tell a user story here.
+
+1. enter inputs into the x and y input fields on the dom
+2. select which type of math calculation should be done with the drop down menu
+3. hit the calculate button 
+4. calculations are shown in the Answer field of the DOM, whereas the history of previously submitted answers can be viewed by the user below on the DOM.
+
+
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
