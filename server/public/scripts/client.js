@@ -31,7 +31,7 @@ function calculate(event) {
         data: calculationItem,
     })
     .then( function(response) {
-        console.log('POST response: ', response);
+        //console.log('POST response: ', response);
         clearInputs();
         getHistory();
     });
@@ -44,7 +44,7 @@ function getHistory() {
         method: 'GET',
     })
     .then( function(response) {
-        console.log('GET response: ', response);
+        //console.log('GET response: ', response);
         // append to DOM
 
         $('#answer').empty();
