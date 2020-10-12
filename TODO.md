@@ -39,17 +39,17 @@ Step-By-Step Checklist
         - [] Get the object with body-parser
         - [x] Get calculations based on operator
         - [] Store the calculation and result (?)
-        - [] Ok or not? Give a response
+        - [x] Ok or not? Give a response
 
-[] Client
-    - [] Was calculation ok? 
+[x] Client
+    - [x] Was calculation ok? 
 
-[] Answer
+[x] Answer
     - [] GET request 
-        - [] Create/have a route
+        - [x] Create/have a route
         - [] Get the correct answer??? 
-    - [] Loop over array, append to the DOM 
-    - [] Clear the answer 
+    - [x] Loop over array, append to the DOM 
+    - [x] Clear the answer 
         
 
 

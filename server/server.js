@@ -4,20 +4,28 @@ const PORT = 5000;
 
 let app = express();
 
+
+// static files
 app.use(express.static('server/public'));
 app.use(bodyParser.urlencoded({ extended: true}));
 
+let history = [];
 
-//GET ROUTE
 app.get('/history', (req, res) => {
     console.log('in GET /history');
 
-    // send back history array
     res.send(history);
 });
 
 
-//POST ROUTE
+app.post('/calculate', (req, res) => {
+    console.log('in POST /calculate', req.body);
+
+    doMath(req.body);    
+
+    res.sendStatus(201);
+});
+
 app.post('/calculate', (req, res) => {
     console.log('in POST /calculate', req.body);
 

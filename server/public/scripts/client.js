@@ -1,30 +1,30 @@
-console.log(`js`);
+console.log('js');
 
 $(document).ready(onReady);
 
 function onReady() {
-    console.log(`DOM-DOM DOM DOM DOMMMM`);
+    console.log('dom loaded');
 
     // event listeners
-    $('#calculate').on(`click`, calculate);
-
+    $('#calculate').on('click', calculate);
+    getHistory();
+    clearInputs();
 }
 
-function calculate(){
-    console.log(`clicked button!`);
-
-    // STAPH RELOADING PAGE
+// takes input from DOM and sends to server
+function calculate(event) {
+    console.log('clicked button');
+    // don't reload the page
     event.preventDefault();
-
-    // get input
+    
     let calculationItem = {
-        numberOne: $(`#numberOneIn`).val(),
-        numberTwo: $(`#numberTwoIn`).val(),
-        operator: $(`#operatorIn`).val(),
+        numberOne: $('#numberOneIn').val(),
+        numberTwo: $('#numberTwoIn').val(),
+        operator: $('#operatorIn').val(),
     };
-    console.log(`inputs:`, calculationItem);
 
-    //POST to server
+    console.log('inputs: ', calculationItem);
+
     $.ajax({
         url: '/calculate',
         method: 'POST',
@@ -32,11 +32,8 @@ function calculate(){
     })
     .then( function(response) {
         console.log('POST response: ', response);
-        // clear them inputs out!
         clearInputs();
         getHistory();
-
-        
     });
 
 }
@@ -48,6 +45,7 @@ function getHistory() {
     })
     .then( function(response) {
         console.log('GET response: ', response);
+        // append to DOM
 
         $('#answer').empty();
         if(response.length) {
@@ -71,7 +69,8 @@ function clearInputs() {
     $('#numberOneIn').val('');
     $('#numberTwoIn').val('');
 
-        // focus on first input field
-        $('#numberOneIn').focus();
+    // focus on first input field not totally sure on this one.
+    
+    $('#numberOneIn').focus();
     
 }
