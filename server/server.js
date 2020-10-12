@@ -49,6 +49,7 @@ function doMath(calculationItem) {
 
     calculationItem.result = mathResult;
 
+    // store the result on the front of the array
     history.unshift(calculationItem);
 
     console.log('current history: ', history);
